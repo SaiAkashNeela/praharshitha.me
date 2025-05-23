@@ -1,0 +1,63 @@
+Praharshitha Piduru
+svpraharshitha111@gmail.com | hi@praharshitha.uk | +44 7448035896 | St Albans, United Kingdom | www.linkedin.com/svpraharshitha | www.praharshitha.uk | www.leetcode.com/praharshitha_sharma 
+ Profile Summary: Experienced Data Analyst with over 3 years of expertise in analysing complex datasets, delivering actionable insights, and driving strategic decision-making. Skilled in data analysis, machine learning, and visualization, with a strong technical background in Python, SQL, and BI tools. Adept at managing multiple projects and effectively communicating data-driven solutions to diverse stakeholders. Technical Skills
+•	Programming Languages : Python, R , SQL, MDX, DAX, Java , CPP, JavaScript, HTML and Bootstrap
+•	Frameworks : Pandas, Django, JQuery
+•	Databases : MySQL, Postgres, MongoDB
+•	AI/ML : NumPy, SciPy, TensorFlow, Scikit Learn, Keras
+•	ETL Tools : Hadoop
+•	Data Warehousing : Star Schema, Snowflake, OLAP, OLTP, Database design and Optimisation 
+•	Cloud Platforms : Microsoft Azure, Oracle Cloud , Amazon Web Services
+•	Project Management & Methodologies: Agile (Scrum, Kanban), Waterfall
+•	Deployment & Version Control: GitHub, GitLab
+•	Communication: Translating technical models for business implications, documentation, stakeholder engagement
+•	Strong foundation of Data Structures and Algorithms 
+
+ 
+Experience
+Techno Point Ltd, United Kingdom
+Data Analyst, March  2024 - present
+Developed user-friendly applications for MTN (South Africa-based telecom) focusing on customer and business functionalities.
+•	Collected, cleaned, and analysed large datasets using SQL and Snowflake to support business reporting and ad-hoc analysis.
+•	Developed and maintained dashboards using Power BI to visualize KPIs and trends for decision-makers across departments.
+•	Automated recurring data extraction and transformation processes using SQL queries and Snowflake tasks, reducing manual effort and turnaround time.
+•	Collaborated with cross-functional teams to gather requirements and deliver actionable insights that supported marketing, operations, and finance functions.
+•	Implemented data quality checks and validation processes within Snowflake to ensure accurate and reliable reporting.
+•	Presented analytical findings to both technical and non-technical stakeholders, aiding strategic and operational decision-making.
+
+Tata Consultancy Services (TCS), Hyderabad, India
+Data Analyst, Aug 2021 – Jan 2023
+•	Developed and optimized SQL queries and stored procedures to manage and analyse large datasets for a key client in the insurance domain.
+•	Built and maintained dashboards and reports to translate complex data into actionable insights for business stakeholders.
+•	Integrated REST APIs to automate data retrieval and improve overall data flow efficiency across multiple systems.
+•	Designed and optimized ETL workflows using Python and SQL, improving data pipeline efficiency and supporting scalable data operations.
+•	Collaborated with QA teams during integration testing, conducted regular system health checks, and enhanced legacy code to boost performance and reduce execution time.
+•	Worked closely with cross-functional teams to deliver reliable data solutions, ensuring data integrity and timely reporting.
+ Projects
+•	Scammer & Fake User Detection on Twitter (Java, NLP, SQL)
+•	Web application identifying scammers and abusive content on Twitter using NLP.
+•	Designed test cases and performed optimization for improved accuracy and efficiency.
+•	Handwritten Digit Recognition App (Python, TensorFlow, Keras)
+•	Built a digit classification model using neural networks.
+•	Trained, tested, and deployed the model as a clean and efficient application.
+ 
+Education
+University of Hertfordshire 
+MSc in Advance Computer Science
+NRI Institution of Technology 
+Bachelor’s in Computer Science
+ 
+Certifications
+•	Microsoft Certified Azure Fundamentals(AZ-900)
+•	Microsoft AI Fundamentals
+•	Microsoft certified Power BI Data Analyst Associate
+•	Google IT Professional Certification
+•	Certified in Data Structures and Algorithms 
+•	Certified Python and Machine Learning Engineer 
+ 
+Achievements 
+•	Secured a golden badge in Problem Solving with Algorithms
+•	Best Performer Award in Tata Consultancy Services
+•	Secured a good rank in Competitive Coding 
+
+
