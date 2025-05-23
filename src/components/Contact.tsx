@@ -9,7 +9,7 @@ const Contact = () => {
     const form = e.currentTarget;
     const message = form.message.value;
     
-    {/* Open email client with pre-filled content */}
+    /* Open email client with pre-filled content */
     window.location.href = `mailto:hi@praharshitha.me?subject=Portfolio Contact&body=${encodeURIComponent(message)}`;
   };
 
@@ -23,7 +23,8 @@ const Contact = () => {
           viewport={{ once: true }}
         >
           <div className="mb-8 font-mono text-sm text-gray-400">
-            <span className="text-blue-400">//</span> {'Get in Touch'}
+            <span className="text-blue-400">//</span>
+            <span>Get in Touch</span>
           </div>
           <h2 className="text-4xl font-bold mb-12 text-center font-mono">Contact Me</h2>
           
