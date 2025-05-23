@@ -2,7 +2,8 @@
 
 import { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { FaBars, FaTimes, FaMoon, FaSun, FaTerminal, FaCode, FaDownload } from 'react-icons/fa';
+import { FaBars, FaTimes, FaMoon, FaSun } from 'react-icons/fa';
+import Link from 'next/link';
 
 const Navigation = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -72,7 +73,6 @@ const Navigation = () => {
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
           >
-            <FaCode className="w-6 h-6" />
             <span className="font-mono text-lg">Praharshitha Piduru</span>
           </motion.a>
 
@@ -98,7 +98,6 @@ const Navigation = () => {
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
             >
-              <FaDownload className="w-4 h-4" />
               <span>Resume</span>
             </motion.a>
             {/* Theme Toggle */}
@@ -158,7 +157,6 @@ const Navigation = () => {
                   whileHover={{ scale: 1.05 }}
                   whileTap={{ scale: 0.95 }}
                 >
-                  <FaDownload className="w-4 h-4" />
                   <span>Resume</span>
                 </motion.a>
                 {/* Theme Toggle for Mobile */}

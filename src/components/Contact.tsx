@@ -9,7 +9,7 @@ const Contact = () => {
     const form = e.currentTarget;
     const message = form.message.value;
     
-    // Open email client with pre-filled content
+    {/* Open email client with pre-filled content */}
     window.location.href = `mailto:hi@praharshitha.me?subject=Portfolio Contact&body=${encodeURIComponent(message)}`;
   };
 

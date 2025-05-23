@@ -229,8 +229,6 @@ export default function Home() {
                         {
                           category: "Tools & Platforms",
                           skills: [
-                            { name: "GitHub", icon: <FaGithub className="w-5 h-5" /> },
-                            { name: "GitLab", icon: <FaGitlab className="w-5 h-5" /> },
                             { name: "Power BI", icon: <FaChartBar className="w-5 h-5" /> },
                             { name: "Hadoop", icon: <FaServer className="w-5 h-5" /> }
                           ]
