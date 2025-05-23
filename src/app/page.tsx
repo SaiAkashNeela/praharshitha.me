@@ -2,7 +2,7 @@
 
 import { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { FaGithub, FaLinkedin, FaPython, FaJava, FaJs, FaHtml5, FaBootstrap, FaAws, FaGitAlt, FaGitlab, FaTasks, FaChartBar, FaDatabase, FaServer, FaCloud, FaDatabase as FaMongoDB } from 'react-icons/fa';
+import { FaLinkedin, FaPython, FaJava, FaJs, FaHtml5, FaBootstrap, FaAws, FaTasks, FaChartBar, FaDatabase, FaServer, FaCloud, FaDatabase as FaMongoDB } from 'react-icons/fa';
 import { HiOutlineMail } from 'react-icons/hi';
 import { SiTensorflow, SiPandas, SiNumpy, SiScipy, SiScikitlearn, SiKeras, SiDjango, SiJquery, SiMysql, SiPostgresql, SiLeetcode } from 'react-icons/si';
 import { TbBrandCpp } from 'react-icons/tb';
@@ -53,7 +53,7 @@ export default function Home() {
                   >
                     <div className="mb-8 font-mono text-sm text-gray-500 dark:text-gray-400">
                       <span className="text-blue-600 dark:text-blue-400">//</span> Welcome to my portfolio
-        </div>
+                    </div>
                     <motion.h1
                       initial={{ opacity: 0, y: 20 }}
                       animate={{ opacity: 1, y: 0 }}
@@ -68,7 +68,7 @@ export default function Home() {
                       transition={{ delay: 0.4, duration: 0.8 }}
                       className="text-xl sm:text-2xl md:text-3xl text-gray-700 dark:text-gray-300 mb-8 font-mono"
                     >
-                      <span className="text-blue-600 dark:text-blue-400">const</span> role = <span className="text-yellow-600 dark:text-yellow-400">"Data Analyst & Developer"</span>;
+                      <span className="text-blue-600 dark:text-blue-400">const</span> role = <span className="text-yellow-600 dark:text-yellow-400">&quot;Data Analyst &amp; Developer&quot;</span>;
                     </motion.h2>
                     <motion.p
                       initial={{ opacity: 0, y: 20 }}
@@ -92,7 +92,7 @@ export default function Home() {
                         <span>Email</span>
                       </a>
                       <a
-                        href="https://www.linkedin.com/in/praharshitha-psv-4b772b21a/"
+                        href="https://www.linkedin.com/in/praharshitha"
                         target="_blank"
                         rel="noopener noreferrer"
                         className="flex items-center space-x-2 text-gray-600 hover:text-blue-600 dark:text-gray-400 dark:hover:text-blue-400 transition-colors font-mono"
@@ -152,10 +152,10 @@ export default function Home() {
                     <h2 className="text-4xl font-bold mb-8 text-center font-mono">About Me</h2>
                     <div className="bg-gray-900 p-6 rounded-lg border border-gray-700">
                       <p className="text-lg text-gray-300 mb-6 font-mono">
-                        <span className="text-blue-400">const</span> about = <span className="text-yellow-400">`I'm an experienced Data Analyst with over 3 years of expertise in analysing complex datasets, delivering actionable insights, and driving strategic decision-making. My technical background spans across Python, SQL, and various BI tools, allowing me to effectively bridge the gap between data and business strategy.`</span>;
+                        <span className="text-blue-400">const</span> about = <span className="text-yellow-400">`I&apos;m an experienced Data Analyst with over 3 years of expertise in analysing complex datasets, delivering actionable insights, and driving strategic decision-making. My technical background spans across Python, SQL, and various BI tools, allowing me to effectively bridge the gap between data and business strategy.`</span>;
                       </p>
                       <p className="text-lg text-gray-300 font-mono">
-                        <span className="text-blue-400">const</span> location = <span className="text-yellow-400">"St Albans, United Kingdom"</span>;
+                        <span className="text-blue-400">const</span> location = <span className="text-yellow-400">&quot;St Albans, United Kingdom&quot;</span>;
                       </p>
                     </div>
                   </motion.div>

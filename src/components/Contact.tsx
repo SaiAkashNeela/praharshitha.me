@@ -7,7 +7,6 @@ const Contact = () => {
   const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     const form = e.currentTarget;
-    const email = form.email.value;
     const message = form.message.value;
     
     // Open email client with pre-filled content
