@@ -90,7 +90,7 @@ const Navigation = () => {
             ))}
             {/* Resume Download */}
             <motion.a
-              href="/resume.pdf"
+              href="https://s3.ap-south-2.amazonaws.com/saiakashneela.com/Praharshitha+Piduru+cv.docx"
               className="flex items-center gap-2 px-4 py-2 bg-blue-600 hover:bg-blue-700 text-white rounded-md transition-colors font-mono text-sm"
               target="_blank"
               rel="noopener noreferrer"
@@ -149,7 +149,7 @@ const Navigation = () => {
                 ))}
                 {/* Resume Download for Mobile */}
                 <motion.a
-                  href="/resume.pdf"
+                  href="https://s3.ap-south-2.amazonaws.com/saiakashneela.com/Praharshitha+Piduru+cv.docx"
                   className="flex items-center gap-2 px-4 py-2 bg-blue-600 hover:bg-blue-700 text-white rounded-md transition-colors font-mono text-sm w-fit"
                   target="_blank"
                   rel="noopener noreferrer"

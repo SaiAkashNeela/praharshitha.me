@@ -93,7 +93,7 @@ export default function Home() {
                         <span>Email</span>
                       </a>
                       <a
-                        href="https://www.linkedin.com/in/praharshitha"
+                        href="https://www.linkedin.com/in/praharshitha-psv-4b772b21a/"
                         target="_blank"
                         rel="noopener noreferrer"
                         className="flex items-center space-x-2 text-gray-600 hover:text-blue-600 dark:text-gray-400 dark:hover:text-blue-400 transition-colors font-mono"
@@ -102,7 +102,7 @@ export default function Home() {
                         <span>LinkedIn</span>
                       </a>
                       <a
-                        href="https://leetcode.com/praharshitha"
+                        href="https://leetcode.com/praharshitha_sharma"
                         target="_blank"
                         rel="noopener noreferrer"
                         className="flex items-center space-x-2 text-gray-600 hover:text-blue-600 dark:text-gray-400 dark:hover:text-blue-400 transition-colors font-mono"
