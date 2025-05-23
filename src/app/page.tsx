@@ -52,7 +52,7 @@ export default function Home() {
                     className="text-center"
                   >
                     <div className="mb-8 font-mono text-sm text-gray-500 dark:text-gray-400">
-                      <span className="text-blue-600 dark:text-blue-400">//</span> Welcome to my portfolio
+                      <span className="text-blue-600 dark:text-blue-400">//</span> {'Welcome to my portfolio'}
                     </div>
                     <motion.h1
                       initial={{ opacity: 0, y: 20 }}
@@ -147,7 +147,7 @@ export default function Home() {
                     className="max-w-4xl mx-auto"
                   >
                     <div className="mb-8 font-mono text-sm text-gray-400">
-                      <span className="text-blue-400">//</span> About Me
+                      <span className="text-blue-400">//</span> {'About Me'}
                     </div>
                     <h2 className="text-4xl font-bold mb-8 text-center font-mono">About Me</h2>
                     <div className="bg-gray-900 p-6 rounded-lg border border-gray-700">
@@ -172,7 +172,7 @@ export default function Home() {
                     viewport={{ once: true }}
                   >
                     <div className="mb-8 font-mono text-sm text-gray-400">
-                      <span className="text-blue-400">//</span> Technical Skills
+                      <span className="text-blue-400">//</span> {'Technical Skills'}
                     </div>
                     <h2 className="text-4xl font-bold mb-12 text-center font-mono">Technical Skills</h2>
                     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -280,7 +280,7 @@ export default function Home() {
                     viewport={{ once: true }}
                   >
                     <div className="mb-8 font-mono text-sm text-gray-400">
-                      <span className="text-blue-400">//</span> Work Experience
+                      <span className="text-blue-400">//</span> {'Work Experience'}
                     </div>
                     <h2 className="text-4xl font-bold mb-12 text-center font-mono">Experience</h2>
                     <div className="max-w-4xl mx-auto space-y-12">
@@ -336,7 +336,7 @@ export default function Home() {
                     viewport={{ once: true }}
                   >
                     <div className="mb-8 font-mono text-sm text-gray-400">
-                      <span className="text-blue-400">//</span> Featured Projects
+                      <span className="text-blue-400">//</span> {'Featured Projects'}
                     </div>
                     <h2 className="text-4xl font-bold mb-12 text-center font-mono">Projects</h2>
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-6xl mx-auto">

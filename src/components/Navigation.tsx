@@ -3,7 +3,6 @@
 import { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { FaBars, FaTimes, FaMoon, FaSun } from 'react-icons/fa';
-import Link from 'next/link';
 
 const Navigation = () => {
   const [isOpen, setIsOpen] = useState(false);
