@@ -63,4 +63,4 @@ MIT License - feel free to use this template for your own portfolio!
 
 - Email: svpraharshitha111@gmail.com
 - LinkedIn: [Praharshitha Piduru](https://www.linkedin.com/in/praharshitha-psv-4b772b21a/)
-- Website: [praharshitha.uk](https://praharshitha.uk)
+- Website: [praharshitha.me](https://praharshitha.me)
