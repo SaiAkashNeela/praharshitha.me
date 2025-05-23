@@ -1,7 +1,7 @@
 'use client';
 
 import { motion } from 'framer-motion';
-import { FaEnvelope, FaMapMarkerAlt, FaPhone } from 'react-icons/fa';
+import { FaEnvelope, FaMapMarkerAlt, FaPhone, FaGlobe } from 'react-icons/fa';
 
 const Contact = () => {
   const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
@@ -11,7 +11,7 @@ const Contact = () => {
     const message = form.message.value;
     
     // Open email client with pre-filled content
-    window.location.href = `mailto:svpraharshitha111@gmail.com?subject=Portfolio Contact&body=${encodeURIComponent(message)}`;
+    window.location.href = `mailto:hi@praharshitha.me?subject=Portfolio Contact&body=${encodeURIComponent(message)}`;
   };
 
   return (
@@ -42,9 +42,27 @@ const Contact = () => {
                 <div className="flex items-center space-x-4">
                   <FaEnvelope className="w-6 h-6 text-blue-400" />
                   <div>
-                    <p className="text-gray-400 font-mono text-sm">Email</p>
+                    <p className="text-gray-400 font-mono text-sm">Primary Email</p>
+                    <a href="mailto:hi@praharshitha.me" className="text-gray-300 hover:text-blue-400 transition-colors font-mono">
+                      hi@praharshitha.me
+                    </a>
+                  </div>
+                </div>
+                <div className="flex items-center space-x-4">
+                  <FaEnvelope className="w-6 h-6 text-blue-400" />
+                  <div>
+                    <p className="text-gray-400 font-mono text-sm">Secondary Email</p>
                     <a href="mailto:svpraharshitha111@gmail.com" className="text-gray-300 hover:text-blue-400 transition-colors font-mono">
                       svpraharshitha111@gmail.com
+                    </a>
+                  </div>
+                </div>
+                <div className="flex items-center space-x-4">
+                  <FaGlobe className="w-6 h-6 text-blue-400" />
+                  <div>
+                    <p className="text-gray-400 font-mono text-sm">Website</p>
+                    <a href="https://praharshitha.me" className="text-gray-300 hover:text-blue-400 transition-colors font-mono">
+                      praharshitha.me
                     </a>
                   </div>
                 </div>
@@ -59,8 +77,8 @@ const Contact = () => {
                   <FaPhone className="w-6 h-6 text-blue-400" />
                   <div>
                     <p className="text-gray-400 font-mono text-sm">Phone</p>
-                    <a href="tel:+447123456789" className="text-gray-300 hover:text-blue-400 transition-colors font-mono">
-                      +44 7123 456 789
+                    <a href="tel:+447448035896" className="text-gray-300 hover:text-blue-400 transition-colors font-mono">
+                      +44 7448 035 896
                     </a>
                   </div>
                 </div>

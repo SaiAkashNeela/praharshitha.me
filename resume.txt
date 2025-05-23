@@ -1,5 +1,5 @@
 Praharshitha Piduru
-svpraharshitha111@gmail.com | hi@praharshitha.uk | +44 7448035896 | St Albans, United Kingdom | www.linkedin.com/svpraharshitha | www.praharshitha.uk | www.leetcode.com/praharshitha_sharma 
+svpraharshitha111@gmail.com | hi@praharshitha.uk | +44 7448035896 | St Albans, United Kingdom | www.linkedin.com/in/praharshitha-psv-4b772b21a/ | www.praharshitha.me | www.leetcode.com/praharshitha_sharma 
  Profile Summary: Experienced Data Analyst with over 3 years of expertise in analysing complex datasets, delivering actionable insights, and driving strategic decision-making. Skilled in data analysis, machine learning, and visualization, with a strong technical background in Python, SQL, and BI tools. Adept at managing multiple projects and effectively communicating data-driven solutions to diverse stakeholders. Technical Skills
 •	Programming Languages : Python, R , SQL, MDX, DAX, Java , CPP, JavaScript, HTML and Bootstrap
 •	Frameworks : Pandas, Django, JQuery

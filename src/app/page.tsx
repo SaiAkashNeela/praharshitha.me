@@ -2,26 +2,34 @@
 
 import { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { FaGithub, FaLinkedin } from 'react-icons/fa';
+import { FaGithub, FaLinkedin, FaPython, FaJava, FaJs, FaHtml5, FaBootstrap, FaAws, FaGitAlt, FaGitlab, FaTasks, FaChartBar, FaDatabase, FaServer, FaCloud, FaDatabase as FaMongoDB } from 'react-icons/fa';
 import { HiOutlineMail } from 'react-icons/hi';
+import { SiTensorflow, SiPandas, SiNumpy, SiScipy, SiScikitlearn, SiKeras, SiDjango, SiJquery, SiMysql, SiPostgresql, SiLeetcode } from 'react-icons/si';
+import { TbBrandCpp } from 'react-icons/tb';
 import Navigation from '@/components/Navigation';
 import Loader from '@/components/Loader';
 import Contact from '@/components/Contact';
+import InitialLoad from '@/components/InitialLoad';
 
 export default function Home() {
+  const [mounted, setMounted] = useState(false);
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    // Simulate loading time
+    setMounted(true);
     const timer = setTimeout(() => {
       setLoading(false);
-    }, 5000); // Increased to 5 seconds to show taglines
+    }, 5000);
 
     return () => clearTimeout(timer);
   }, []);
 
+  if (!mounted) {
+    return <InitialLoad />;
+  }
+
   return (
-    <>
+    <div suppressHydrationWarning className="min-h-screen bg-gray-50 dark:bg-gray-900">
       <AnimatePresence mode="wait">
         {loading ? (
           <Loader key="loader" />
@@ -33,7 +41,7 @@ export default function Home() {
             transition={{ duration: 0.5 }}
           >
             <Navigation />
-            <main className="min-h-screen bg-gray-50 dark:bg-gray-900 text-gray-900 dark:text-gray-100">
+            <main className="min-h-screen text-gray-900 dark:text-gray-100">
               {/* Hero Section */}
               <section id="home" className="relative h-screen flex items-center justify-center bg-gradient-to-br from-gray-50 to-gray-100 dark:from-gray-900 dark:to-gray-800">
                 <div className="container mx-auto px-4">
@@ -77,29 +85,29 @@ export default function Home() {
                       className="flex flex-wrap justify-center gap-4 sm:gap-6"
                     >
                       <a
-                        href="mailto:svpraharshitha111@gmail.com"
+                        href="mailto:hi@praharshitha.me"
                         className="flex items-center space-x-2 text-gray-600 hover:text-blue-600 dark:text-gray-400 dark:hover:text-blue-400 transition-colors font-mono"
                       >
                         <HiOutlineMail className="w-5 h-5 sm:w-6 sm:h-6" />
                         <span>Email</span>
-        </a>
-        <a
-                        href="https://www.linkedin.com/svpraharshitha"
-          target="_blank"
-          rel="noopener noreferrer"
+                      </a>
+                      <a
+                        href="https://www.linkedin.com/in/praharshitha-psv-4b772b21a/"
+                        target="_blank"
+                        rel="noopener noreferrer"
                         className="flex items-center space-x-2 text-gray-600 hover:text-blue-600 dark:text-gray-400 dark:hover:text-blue-400 transition-colors font-mono"
                       >
                         <FaLinkedin className="w-5 h-5 sm:w-6 sm:h-6" />
                         <span>LinkedIn</span>
-        </a>
-        <a
-                        href="https://github.com/praharshitha"
-          target="_blank"
-          rel="noopener noreferrer"
+                      </a>
+                      <a
+                        href="https://leetcode.com/praharshitha"
+                        target="_blank"
+                        rel="noopener noreferrer"
                         className="flex items-center space-x-2 text-gray-600 hover:text-blue-600 dark:text-gray-400 dark:hover:text-blue-400 transition-colors font-mono"
                       >
-                        <FaGithub className="w-5 h-5 sm:w-6 sm:h-6" />
-                        <span>GitHub</span>
+                        <SiLeetcode className="w-5 h-5 sm:w-6 sm:h-6" />
+                        <span>LeetCode</span>
                       </a>
                     </motion.div>
                   </motion.div>
@@ -171,27 +179,70 @@ export default function Home() {
                       {[
                         {
                           category: "Programming Languages",
-                          skills: ["Python", "R", "SQL", "MDX", "DAX", "Java", "C++", "JavaScript", "HTML", "Bootstrap"]
+                          skills: [
+                            { name: "Python", icon: <FaPython className="w-5 h-5" /> },
+                            { name: "R", icon: <span className="text-[#276DC3] font-bold">R</span> },
+                            { name: "SQL", icon: <FaDatabase className="w-5 h-5" /> },
+                            { name: "MDX", icon: <span className="text-[#0074A3] font-bold">MDX</span> },
+                            { name: "DAX", icon: <span className="text-[#0074A3] font-bold">DAX</span> },
+                            { name: "Java", icon: <FaJava className="w-5 h-5" /> },
+                            { name: "C++", icon: <TbBrandCpp className="w-5 h-5" /> },
+                            { name: "JavaScript", icon: <FaJs className="w-5 h-5" /> },
+                            { name: "HTML", icon: <FaHtml5 className="w-5 h-5" /> },
+                            { name: "Bootstrap", icon: <FaBootstrap className="w-5 h-5" /> }
+                          ]
                         },
                         {
                           category: "Frameworks & Libraries",
-                          skills: ["Pandas", "Django", "jQuery", "NumPy", "SciPy", "TensorFlow", "Scikit Learn", "Keras"]
+                          skills: [
+                            { name: "Pandas", icon: <SiPandas className="w-5 h-5" /> },
+                            { name: "Django", icon: <SiDjango className="w-5 h-5" /> },
+                            { name: "jQuery", icon: <SiJquery className="w-5 h-5" /> },
+                            { name: "NumPy", icon: <SiNumpy className="w-5 h-5" /> },
+                            { name: "SciPy", icon: <SiScipy className="w-5 h-5" /> },
+                            { name: "TensorFlow", icon: <SiTensorflow className="w-5 h-5" /> },
+                            { name: "Scikit Learn", icon: <SiScikitlearn className="w-5 h-5" /> },
+                            { name: "Keras", icon: <SiKeras className="w-5 h-5" /> }
+                          ]
                         },
                         {
                           category: "Databases & Cloud",
-                          skills: ["MySQL", "Postgres", "MongoDB", "Microsoft Azure", "Oracle Cloud", "AWS"]
+                          skills: [
+                            { name: "MySQL", icon: <SiMysql className="w-5 h-5" /> },
+                            { name: "Postgres", icon: <SiPostgresql className="w-5 h-5" /> },
+                            { name: "MongoDB", icon: <FaMongoDB className="w-5 h-5" /> },
+                            { name: "Microsoft Azure", icon: <FaCloud className="w-5 h-5" /> },
+                            { name: "Oracle Cloud", icon: <FaCloud className="w-5 h-5" /> },
+                            { name: "AWS", icon: <FaAws className="w-5 h-5" /> }
+                          ]
                         },
                         {
                           category: "Data Warehousing",
-                          skills: ["Star Schema", "Snowflake", "OLAP", "OLTP", "Database Design"]
+                          skills: [
+                            { name: "Star Schema", icon: <span className="text-[#0074A3] font-bold">★</span> },
+                            { name: "Snowflake", icon: <FaCloud className="w-5 h-5" /> },
+                            { name: "OLAP", icon: <span className="text-[#0074A3] font-bold">OLAP</span> },
+                            { name: "OLTP", icon: <span className="text-[#0074A3] font-bold">OLTP</span> },
+                            { name: "Database Design", icon: <FaDatabase className="w-5 h-5" /> }
+                          ]
                         },
                         {
                           category: "Tools & Platforms",
-                          skills: ["GitHub", "GitLab", "Power BI", "Hadoop"]
+                          skills: [
+                            { name: "GitHub", icon: <FaGithub className="w-5 h-5" /> },
+                            { name: "GitLab", icon: <FaGitlab className="w-5 h-5" /> },
+                            { name: "Power BI", icon: <FaChartBar className="w-5 h-5" /> },
+                            { name: "Hadoop", icon: <FaServer className="w-5 h-5" /> }
+                          ]
                         },
                         {
                           category: "Methodologies",
-                          skills: ["Agile", "Scrum", "Kanban", "Waterfall"]
+                          skills: [
+                            { name: "Agile", icon: <FaTasks className="w-5 h-5" /> },
+                            { name: "Scrum", icon: <span className="text-[#0074A3] font-bold">S</span> },
+                            { name: "Kanban", icon: <span className="text-[#0074A3] font-bold">K</span> },
+                            { name: "Waterfall", icon: <span className="text-[#0074A3] font-bold">W</span> }
+                          ]
                         }
                       ].map((category, index) => (
                         <motion.div
@@ -207,9 +258,10 @@ export default function Home() {
                             {category.skills.map((skill, skillIndex) => (
                               <span
                                 key={skillIndex}
-                                className="px-3 py-1 bg-gray-700 text-gray-300 rounded-md text-sm font-mono"
+                                className="px-3 py-1 bg-gray-700 text-gray-300 rounded-md text-sm font-mono flex items-center gap-2"
                               >
-                                {skill}
+                                {skill.icon}
+                                {skill.name}
                               </span>
                             ))}
                           </div>
@@ -329,7 +381,7 @@ export default function Home() {
                       </motion.div>
                     </div>
                   </motion.div>
-    </div>
+                </div>
               </section>
 
               {/* Contact Section */}
@@ -338,6 +390,6 @@ export default function Home() {
           </motion.div>
         )}
       </AnimatePresence>
-    </>
+    </div>
   );
 }

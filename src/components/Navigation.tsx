@@ -7,9 +7,11 @@ import { FaBars, FaTimes, FaMoon, FaSun, FaTerminal, FaCode, FaDownload } from '
 const Navigation = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
+  const [mounted, setMounted] = useState(false);
   const [darkMode, setDarkMode] = useState(true);
 
   useEffect(() => {
+    setMounted(true);
     const handleScroll = () => {
       setScrolled(window.scrollY > 50);
     };
@@ -18,12 +20,14 @@ const Navigation = () => {
   }, []);
 
   useEffect(() => {
-    if (darkMode) {
-      document.documentElement.classList.add('dark');
-    } else {
-      document.documentElement.classList.remove('dark');
+    if (mounted) {
+      if (darkMode) {
+        document.documentElement.classList.add('dark');
+      } else {
+        document.documentElement.classList.remove('dark');
+      }
     }
-  }, [darkMode]);
+  }, [darkMode, mounted]);
 
   const navItems = [
     { name: 'Home', href: '#home' },
@@ -33,6 +37,21 @@ const Navigation = () => {
     { name: 'Projects', href: '#projects' },
     { name: 'Contact', href: '#contact' },
   ];
+
+  // Return a minimal version during SSR
+  if (!mounted) {
+    return (
+      <div className="fixed w-full z-50 bg-transparent">
+        <div className="container mx-auto px-4">
+          <div className="flex justify-between items-center h-16">
+            <div className="flex items-center space-x-2">
+              <span className="font-mono text-lg text-gray-900 dark:text-gray-100">Praharshitha Piduru</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    );
+  }
 
   return (
     <motion.nav
@@ -46,17 +65,15 @@ const Navigation = () => {
     >
       <div className="container mx-auto px-4">
         <div className="flex justify-between items-center h-16">
-          {/* Developer-like Terminal Brand */}
+          {/* Brand */}
           <motion.a
             href="#home"
-            className="flex items-center gap-2 text-xl font-bold text-gray-900 dark:text-white select-none"
-            whileHover={{ scale: 1.02 }}
-            whileTap={{ scale: 0.98 }}
+            className="flex items-center space-x-2 text-gray-900 dark:text-gray-100 hover:text-blue-600 dark:hover:text-blue-400 transition-colors"
+            whileHover={{ scale: 1.05 }}
+            whileTap={{ scale: 0.95 }}
           >
-            <FaTerminal className="text-blue-600 dark:text-blue-400" />
-            <span className="font-mono tracking-tight hidden sm:inline">Praharshitha Piduru</span>
-            <span className="font-mono tracking-tight sm:hidden">PP</span>
-            <span className="text-sm text-gray-500 dark:text-gray-400 font-mono hidden md:inline">// Data Analyst & Developer</span>
+            <FaCode className="w-6 h-6" />
+            <span className="font-mono text-lg">Praharshitha Piduru</span>
           </motion.a>
 
           {/* Desktop Navigation */}
@@ -65,7 +82,7 @@ const Navigation = () => {
               <motion.a
                 key={item.name}
                 href={item.href}
-                className="text-gray-600 hover:text-blue-600 dark:text-gray-300 dark:hover:text-blue-400 transition-colors font-mono text-sm"
+                className="text-gray-900 dark:text-gray-100 hover:text-blue-600 dark:hover:text-blue-400 transition-colors font-mono text-sm"
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
               >
@@ -98,7 +115,7 @@ const Navigation = () => {
 
           {/* Mobile Navigation Button */}
           <motion.button
-            className="md:hidden text-gray-600 dark:text-gray-300"
+            className="md:hidden text-gray-900 dark:text-gray-100"
             onClick={() => setIsOpen(!isOpen)}
             whileHover={{ scale: 1.1 }}
             whileTap={{ scale: 0.9 }}
@@ -124,7 +141,7 @@ const Navigation = () => {
                   <motion.a
                     key={item.name}
                     href={item.href}
-                    className="text-gray-600 hover:text-blue-600 dark:text-gray-300 dark:hover:text-blue-400 transition-colors font-mono text-sm"
+                    className="text-gray-900 dark:text-gray-100 hover:text-blue-600 dark:hover:text-blue-400 transition-colors font-mono text-sm"
                     onClick={() => setIsOpen(false)}
                     whileHover={{ x: 10 }}
                     whileTap={{ scale: 0.95 }}
