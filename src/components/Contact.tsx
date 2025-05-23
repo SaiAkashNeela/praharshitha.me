@@ -23,7 +23,7 @@ const Contact = () => {
           viewport={{ once: true }}
         >
           <div className="mb-8 font-mono text-sm text-gray-400">
-            <span className="text-blue-400">//</span>
+            <span className="text-blue-400">{'//'}</span>
             <span>Get in Touch</span>
           </div>
           <h2 className="text-4xl font-bold mb-12 text-center font-mono">Contact Me</h2>

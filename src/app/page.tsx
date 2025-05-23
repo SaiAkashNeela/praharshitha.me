@@ -52,7 +52,7 @@ export default function Home() {
                     className="text-center"
                   >
                     <div className="mb-8 font-mono text-sm text-gray-500 dark:text-gray-400">
-                      <span className="text-blue-600 dark:text-blue-400">//</span>
+                      <span className="text-blue-600 dark:text-blue-400">{'//'}</span>
                       <span>Welcome to my portfolio</span>
                     </div>
                     <motion.h1
@@ -77,7 +77,7 @@ export default function Home() {
                       transition={{ delay: 0.6, duration: 0.8 }}
                       className="text-base sm:text-lg md:text-xl text-gray-600 dark:text-gray-400 max-w-2xl mx-auto mb-12 font-mono"
                     >
-                      <span className="text-blue-600 dark:text-blue-400">//</span> Transforming complex data into actionable insights
+                      <span className="text-blue-600 dark:text-blue-400">{'//'}</span> Transforming complex data into actionable insights
                     </motion.p>
                     <motion.div
                       initial={{ opacity: 0, y: 20 }}
@@ -148,7 +148,7 @@ export default function Home() {
                     className="max-w-4xl mx-auto"
                   >
                     <div className="mb-8 font-mono text-sm text-gray-400">
-                      <span className="text-blue-400">//</span>
+                      <span className="text-blue-400">{'//'}</span>
                       <span>About Me</span>
                     </div>
                     <h2 className="text-4xl font-bold mb-8 text-center font-mono">About Me</h2>
@@ -174,7 +174,7 @@ export default function Home() {
                     viewport={{ once: true }}
                   >
                     <div className="mb-8 font-mono text-sm text-gray-400">
-                      <span className="text-blue-400">//</span>
+                      <span className="text-blue-400">{'//'}</span>
                       <span>Technical Skills</span>
                     </div>
                     <h2 className="text-4xl font-bold mb-12 text-center font-mono">Technical Skills</h2>
@@ -283,7 +283,7 @@ export default function Home() {
                     viewport={{ once: true }}
                   >
                     <div className="mb-8 font-mono text-sm text-gray-400">
-                      <span className="text-blue-400">//</span>
+                      <span className="text-blue-400">{'//'}</span>
                       <span>Work Experience</span>
                     </div>
                     <h2 className="text-4xl font-bold mb-12 text-center font-mono">Experience</h2>
@@ -340,7 +340,7 @@ export default function Home() {
                     viewport={{ once: true }}
                   >
                     <div className="mb-8 font-mono text-sm text-gray-400">
-                      <span className="text-blue-400">//</span>
+                      <span className="text-blue-400">{'//'}</span>
                       <span>Featured Projects</span>
                     </div>
                     <h2 className="text-4xl font-bold mb-12 text-center font-mono">Projects</h2>
